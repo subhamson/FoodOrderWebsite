@@ -1,0 +1,16 @@
+1)Requirements: - 
+	i.	Node js
+	ii.	Angular CLI
+	iii.	VS code 
+	iv.	Python 
+	v.	Django
+
+2)RUN THE PROJECT:- 1st you need to run the backend django project by 
+opening the terminal in the 'BACKEND' folder and type: 
+python manage.py runserver
+then you need to run the angular frontend part by
+opening the terminal in FRONTEND folder and type:
+ng s -o
+
+that's it. It will run the website on localhost in your default browser.
+

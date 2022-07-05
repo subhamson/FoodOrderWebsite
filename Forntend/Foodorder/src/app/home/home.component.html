@@ -1,0 +1,37 @@
+<div class="home-welcome">
+    <h1 class="h-primary">Welcome To SM FOOD CORNER</h1>
+    <p>We Provide you the best quality foods in cheap price</p>
+    <p>Then what are you waiting for?</p>
+    <p>Order Now</p>
+    <img src="/assets/img/home_food1.jpg" alt="bgimg">
+    <!-- adding search  -->
+    <app-search></app-search>
+</div>
+<!-- food list items -->
+<div class="foods">
+    <ul>
+        <li *ngFor="let foodItem of FoodListItem | filter:searchKey:'Name'">
+            <a>
+                <img src="{{foodItem.ImageUrl}}" alt="food">
+                <div class="content">
+                    <div class="name">{{foodItem.Name}}</div>
+                    <span class="favorite {{foodItem.Favourite}}?'':'not'">♥</span>
+                    <div class="product-item-footer">
+                        <div class="tags">
+                                {{foodItem.Tags}}
+                        </div>
+                        <div class="cook-time">
+                            <span>🕒</span>
+                            {{foodItem.Cooktime}}
+                        </div>
+                    </div>
+                    <div class="price">
+                        Price:- {{foodItem.Price|currency}}
+                    </div>
+                </div>
+                <button (click)=addToCart(foodItem)>ADD TO CART</button>
+            </a>
+        </li>
+    </ul>
+
+</div>

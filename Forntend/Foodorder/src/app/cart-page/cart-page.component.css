@@ -1,0 +1,144 @@
+div.container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    margin: 1.5rem;
+    margin-top: 0.5rem;
+}
+ul{
+    display: flex;
+    flex-direction: column;
+    flex:3 0;
+    justify-content: space-evenly;
+    border: 1px solid #ffbbbb;
+    border-radius: 1rem;
+    list-style: none;
+    margin: 0.5rem;
+    padding: 0;
+}
+ul li{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #e4e4e4;
+}
+ul li:last-child{
+    border: none;
+}
+li img{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 100rem;
+    object-fit: cover;
+}
+li div{
+    padding: 1rem;
+}
+li div:not(:first-child){
+    flex-basis: 18%;
+}
+li .remove-button{
+    border-radius: 1rem;
+    border: none;
+    padding: 0.5rem;
+    background-color: #e72929;
+    color: white;
+    opacity: 0.7;
+    outline: none;
+}
+  
+li .remove-button:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+.checkout{
+    border-radius: 1rem;
+    border: none;
+    padding: 0.5rem;
+    background-color: rgb(97, 243, 97);
+    color: black;
+    outline: none;
+}
+.checkout:hover{
+    opacity: 0.7;
+    cursor: pointer;
+}
+.empty{
+    border-radius: 1rem;
+    border: none;
+    padding: 0.5rem;
+    background-color: red;
+    color: white;
+    outline: none;
+    opacity: 0.7;
+}
+.empty:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+.shop{
+    border-radius: 1rem;
+    border: none;
+    padding: 0.5rem;
+    background-color: blue;
+    color: white;
+    outline: none;
+    opacity: 0.7;
+}
+.shop:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+div.empty-cart{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 1.5rem;
+    margin-top: 0.5rem;
+}
+div.empty-cart li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #ffbbbb;
+    border-radius: 1rem;
+    list-style: none;
+    margin: 0.5rem;
+    padding: 0;
+}
+div.empty-cart li h4{
+    font-size: 2.5rem;
+    /* padding: 12px; */
+    margin-top: 0px;
+    color: #2b758b;
+    text-shadow: 2px 2px 3px rgb(0, 0, 0);
+    text-align: center;
+    margin-bottom: 0rem;
+}
+div.empty-cart li h6{
+    color: black;
+    text-shadow: 2px 2px 1px white;
+    text-align: center;
+    font-size: 1.4rem;
+    margin-top: 0px;
+    margin-bottom: 6px;
+    font-weight: bold; 
+}
+.new-order{
+    border-radius: 1rem;
+    border: none;
+    padding: 0.5rem;
+    background-color: #e72929;
+    color: white;
+    outline: none;
+}
+.new-order:hover{
+    cursor: pointer;
+    opacity: 0.7;
+}
+div.empty-cart li img{
+    height: 15rem;
+    width: 15rem;
+    
+}

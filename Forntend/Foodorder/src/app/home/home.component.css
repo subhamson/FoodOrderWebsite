@@ -1,0 +1,111 @@
+.home-welcome{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+}
+.home-welcome img{
+    content: "";
+    position: absolute;
+    bottom: 250px;
+    /* height: 100%; */
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+}
+.h-primary{
+    font-size: 2.5rem;
+    padding: 12px;
+    color: #ffffff;
+    text-shadow: 2px 2px 3px rgb(0, 0, 0);
+    text-align: center;
+    margin-bottom: 0rem;
+}
+.home-welcome p{
+    color: black;
+    text-shadow: 2px 2px 1px white;
+    text-align: center;
+    font-size: 1.4rem;
+    margin-top: 0rem;
+    margin-bottom: 6px;
+    font-weight: bold; 
+}
+
+/* styling foods */
+ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 0;
+}
+ul li a{
+    height: 24rem;
+    width: 20rem;
+    border: 1px solid rgb(153, 153, 153);
+    border-radius: 1rem;
+    margin: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    color: #e72929;
+}
+/* ul li a:hover{
+    opacity: 0.9;
+    cursor: pointer;
+} */
+
+/* styling the food item details */
+.content{
+    padding: 1rem;
+    position: relative;
+}
+.favorite{
+    position: absolute;
+    top: 0.5rem;
+    right: 1rem;
+    font-size: 1rem;
+}
+.favorite.not{
+    color: black;
+}
+.product-item-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.tags{
+    flex: 9;
+    background-color: whitesmoke;
+    color: gray;
+    font-size: 0.9rem;
+    margin-right: 0.3rem;
+    display: inline-block;
+    border-radius: 20px;
+}
+.cook-time{
+    font-size: 00.9rem;
+    flex: 3;
+    text-align: right;
+}
+.price{
+    margin-top: 0.5rem;
+    font-size: 1rem;
+}
+ul li a button{
+    color: white;
+    background-color: #e72929;
+    border: none;
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    border-radius: 10rem;
+    outline: none;
+
+}
+ul li a button:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}

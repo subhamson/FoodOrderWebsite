@@ -1,0 +1,59 @@
+header{
+    /* background-color: white; */
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 0;
+    border-bottom: 1px solid #e72929;
+}
+
+/* anchor tag styling */
+a{
+    color: #af1313;
+    display: block;
+    padding: 3px 15px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+a:hover{
+    background-color: #e72929;
+    color: white;
+}
+a span{
+    background: #ff4d4d;
+    color: white;
+    padding: 0.1rem 0.45rem;
+    border-radius: 100rem;
+    font-size: 0.9rem;
+}
+/* container styling */
+.container{
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+/* logo styleing */
+#logos{
+    display: flex;
+}
+a.lname{
+    font-weight: bold;
+}
+#logo{
+    margin: -20px -37px;
+}
+#logo img{
+    height: 46px;
+    margin: 10px 47px;
+}
+
+/* nav bar list styling  */
+#navbar ul{
+    display: flex;
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.1rem;
+}
+

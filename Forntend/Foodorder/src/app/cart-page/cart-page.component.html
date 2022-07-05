@@ -1,0 +1,31 @@
+<ng-container *ngIf="product.length !=0">
+    <div class="container">
+        <ul>
+            <li *ngFor="let item of product; let i = index">
+                <div>{{i+1}}</div>
+                <div class="name">{{item.Name}}</div>
+                <div><img src="{{item.ImageUrl}}" alt="foodimage"></div>
+                <div class="price">${{item.Price}}</div>
+                <div><button class="remove-button" (click)="removeItem(item)">REMOVE</button></div>
+
+            </li>
+            <li>
+                <div><button (click)="emptycart()" class="empty">Empty Cart</button></div>
+                <div><button routerLink="/" class="shop">Shop More</button></div>
+                <div><button class="checkout">Checkout</button></div>
+                <div><strong>Grand Total: ${{grandTotal}}</strong></div>
+            </li>
+        </ul>
+    </div>
+</ng-container>
+
+<ng-container *ngIf="product.length ==0">
+    <div class="empty-cart">
+        <li>
+            <img src="/assets/img/empty.jpg" alt="empty">
+            <h4>Your Cart Is EMPTY!</h4>
+            <h6>ADD FOOD to it NOW</h6>
+            <button routerLink="/" class="new-order">ORDER FOOD</button>
+        </li>
+    </div>
+</ng-container>
